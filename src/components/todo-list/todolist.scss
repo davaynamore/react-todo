@@ -1,0 +1,35 @@
+.todo-list {
+
+    &__item {
+        padding: 0;
+        display: none;
+        &.visible {
+            display: block;
+        }
+    }
+
+    &__label {
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+
+    &__input {
+        margin-right: 10px;
+
+        &:checked + * {
+            text-decoration: line-through;
+        }
+    }
+
+    &__item-title {
+        text-transform: uppercase;
+    }
+
+    &__btn {
+        align-self: flex-end;
+    }
+}
