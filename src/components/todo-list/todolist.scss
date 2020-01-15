@@ -2,10 +2,6 @@
 
     &__item {
         padding: 0;
-        display: none;
-        &.visible {
-            display: block;
-        }
     }
 
     &__label {
